@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Course Project</title>
+
+	<!-- INCLUDES -->
+	<!-- CSS -->
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/logo1.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax2.css">
+	<!-- JavaScript and jQuery -->
+
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/parallax_scroll.js"></script>
+	<script type="text/javascript" src="jquery/jquery-1.12.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="jquery/jquery-2.2.3.js"></script>
+	<!-- Metas -->
+
+	<meta charset="utf-8">
+	<!-- Fonts -->
+
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+	
+</head>
+<body onload="imageSlideA();">
+				<div id="infoBG">
+					<a href="indexBG.html">
+						<img src="images/flags/bgFlag.png" height="15" width="25">
+					</a>
+				</div>
+				<div id="infoEN">
+					<a href="index.html">
+						<img src="images/flags/enFlag.gif" height="15" width="25">
+					</a>
+				</div>
+	<div class="parallax">
+<!-- =============== 1 LAYER - IMAGE SLIDER ======================== -->
+		<div id="group1" class="parallax__group1">
+			<div class="parallax__layer parallax__layer--base">
+				<img src="images/logo/logo11.png" class="infoLogo">
+				<img src="images/png/5.png" class="floral__1">
+				<img src="images/png/5.png" class="floral__2">
+				
+					<gallery>
+						<img src="images/slider/img11.jpg">
+		   			<img src="images/slider/img12.jpg" name="text1">
+		   				<div id="welcome">
+								Welcome!
+							</div>
+							<div class="mouse">
+								<div class="mouseScroll">
+								</div>
+							</div>
+		    		<img src="images/slider/img13.jpg">
+		    		<img src="images/slider/img14.jpg">
+		    		<img src="images/slider/img15.jpg">
+		    		<img src="images/slider/img16.jpg">
+		    		<img src="images/slider/img17.jpg">
+		    		<img src="images/slider/img18.jpg">
+		 	 		</gallery>
+		 	 	</div>
+		 	</div>
+<!-- =============== 2 LAYER Bubbles and Content ===================== -->
+		<div id="group2" class="parallax__group2">
+			<div class="parallax__layer parallax__layer--base">
+				<div align="center">
+					<img id="divider_1" src="images/dividers/divider18.png">
+				</div>
+		 	 	<div align="center">
+		 	 		<div id="bubble_1" 
+		 	 		onmouseover="bubble1_show()" 
+		 	 		onmouseout="bubble1_hide()">
+		 	 			<a href="index.html">
+		 	 				<img class="icons--align" src="images/icons/homepage.png" >
+		 	 			</a>
+		 	 			<div class="contentHeader">
+		 	 				<a href="index.html">Home</a>
+		 	 			</div>
+		 	 		</div>
+		 	 		<div id="bubble_2" 
+		 	 		onmouseover="bubble2_show()" 
+		 	 		onmouseout="bubble2_hide()">
+		 	 			<a href="order.html">
+		 	 				<img class="icons--align" src="images/icons/account.png">
+		 	 			</a>
+		 	 			<div class="contentHeader">
+		 	 				<a href="order.html">Order</a>
+		 	 			</div>
+		 	 		</div>
+		 	 		<div id="bubble_3" 
+		 	 		onmouseover="bubble3_show()" 
+		 	 		onmouseout="bubble3_hide()">
+		 	 			<a href="info.html">
+		 	 				<img class="icons--align" src="images/icons/information.png">
+		 	 			</a>
+		 	 			<div class="contentHeader">
+		 	 				<a href="info.html">Information</a>
+		 	 			</div>
+		 	 		</div>
+		 	 		<div id="bubble_4" 
+		 	 		onmouseover="bubble4_show()" 
+		 	 		onmouseout="bubble4_hide()">
+		 	 			<a href="gallery.html">
+		 	 				<img class="icons--align" src="images/icons/gallery.png">
+		 	 			</a>
+		 	 			<div class="contentHeader">
+		 	 				<a href="gallery.html">Gallery</a>
+		 	 			</div>
+		 	 		</div>
+		 	 	</div>
+		 	 	<div align="center">
+		 	 		<img id="house__plant__1" src="images/plants/house-plant-1.png">
+		 	 		<div id="content_1">
+		 	 			<div class="content--text--align">
+		 	 			 <!-- content 1 start -->
+		 	 				Go to our home page and see our latest news, discounts and many more.
+		 	 			</div>
+		 	 		</div> <!-- content end -->
+		 	 		<img id="house__plant__2" src="images/plants/house-plant-2.png">
+					<div id="content_2"> <!-- content 2 start -->
+						<div class="content--text--align">
+							From here you can order anything that you can find in our gallery.
+						</div>
+		 	 		</div> <!-- content end -->
+		 	 		<img id="house__plant__3" src="images/plants/house-plant-3.png">
+					<div id="content_3"> <!-- content 3 start -->
+						<div class="content--text--align">
+							A detailed information about our business and website.
+						</div>
+		 	 		</div> <!-- content end -->
+		 	 		<img id="house__plant__4" src="images/plants/house-plant-4.png">
+					<div id="content_4"> <!-- content 4 start -->
+						<div class="content--text--align--box4">
+							Gallery with all of our products available for purchase through our website.
+						</div>
+		 	 		</div> <!-- content end -->
+		 	 	</div>
+		 	</div>
+		</div>
+<!-- =============== 3 LAYER - IMAGE - PARALLAX ================== -->
+	<!--	<div id="group3" class="parallax__group3">
+			<div class="parallax__layer parallax__layer--base">
+				
+				<img src="images/dividers/divider9_1.png" id="divider_2">
+				<div class="wrapper">
+					<div class="livingRoom1">
+						Living room: Caramel <br />
+					</div>
+				</div>
+
+			</div>
+		</div>
+	-->
+<!-- =============== 4 LAYER DECORATION ========================== -->
+		<div id="group4" class="parallax__group4">
+			<div class="parallax__layer parallax__layer--base">
+				<div align="center">
+					<div id="decorationTag">
+						Decoration
+					</div>
+					<div id="decorationLine"></div>
+					<div id="decorationUndertag">
+						for your home
+					</div>
+				</div>
+				<div id="containerAroundImages">
+				<!-- Divider wrappers (left - slider - right) -->
+				<img src="images/dividers/divider11_left.png" 
+				id="imageSliderWrapperLeft">
+				<img src="images/dividers/divider11_right.png"
+				id="imageSliderWrapperRight">
+				<!-- end wrappers -->
+					<div id="imageContainer">
+						<img src="images/img1.jpg" id="slideImg" onmouseover="checkImage">
+					</div>
+				<!-- Image hovers -->
+					<div id="contentContainer">
+						<div></div>
+					</div>
+					<!-- SLIDER POINTERS -->
+					<img id="pointer__left" src="images/pointers/left-black-arrow.png"
+						onclick="imageSlide(-1)">
+					<img id="pointer__right" src="images/pointers/right-black-arrow.png"
+						onclick="imageSlide(1)">
+				</div>
+			</div>
+		</div>
+<!-- =============== 5 LAYER - IMAGE - PARALLAX ================ -->
+	<!--	<div id="group5" class="parallax__group5">
+			<div class="parallax__layer parallax__layer--base">
+			<img src="images/dividers/divider9_1.png" id="divider_2">
+				<div class="wrapper">
+					<div class="livingRoom2">
+						Living room: Wood & Wool <br />
+					</div>
+				</div>
+
+			</div>
+		</div>
+	-->
+<!-- =============== 6 LAYER ENDING ================ -->
+		<div id="group6" class="parallax__group6">
+			<div class="parallax__layer parallax__layer--base">
+				<img src="images/png/2.png" id="homeLayer6--png">
+				<div id="newsHeader">
+					News
+				</div>
+				<div class="newsBox">
+					<span class="black-text">19.05.2016:</span> Next week you'll find new couches, chairs and decorations in our shops.
+					<br />
+					<div id="newsLine"></div>
+					<span class="black-text">13.05.2016:</span> Next week we'll have new desks and living room furniture.
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

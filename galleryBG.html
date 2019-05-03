@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Галерия</title>
+	<!-- INCLUDES -->
+	<!-- CSS -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/logo1.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax_register.css">
+	<!-- JavaScript and jQuery -->
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/parallax_scroll.js"></script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.js"></script>
+	<!-- Metas -->
+	<meta charset="utf-8">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<style>
+		body {
+			background-image: url("images/texture/2.jpg");
+			background-size: 100%;
+			background-attachment: fixed;
+			z-index: -200;
+		}
+	</style>
+</head>
+<body>
+				<div id="infoBG">
+					<a href="galleryBG.html">
+						<img src="images/flags/bgFlag.png" height="15" width="25">
+					</a>
+				</div>
+				<div id="infoEN">
+					<a href="gallery.html">
+						<img src="images/flags/enFlag.gif" height="15" width="25">
+					</a>
+				</div>
+
+	<div id="gallery-background">
+		
+	</div>
+
+		<div id="gallery-horizontal-L">
+			<a href="indexBG.html">Начало</a>
+			<a href="infoBG.html">Информация</a>
+			Галерия
+			<a href="orderBG.html">Поръчка</a>
+			<a href="registrationBG.html">Регистрация</a>
+		</div>
+		<div id="gallery-vertical-L">
+			<!-- Number Link -->
+			<a href="#imgLink1" class="numLinks">1</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+			<!-- Number Link -->
+			<a href="#imgLink2" class="numLinks">2</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+			<!-- Number Link -->
+			<a href="#imgLink3" class="numLinks">3</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+			<!-- Number Link -->
+			<a href="#imgLink4" class="numLinks">4</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+			<!-- Number Link -->
+			<a href="#imgLink5" class="numLinks">5</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+			<!-- Number Link -->
+			<a href="#imgLink6" class="numLinks">6</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+			<!-- Number Link -->
+			<a href="#imgLink7" class="numLinks">7</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink8" class="numLinks">8</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink9" class="numLinks">9</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink10" class="numLinks">10</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink11" class="numLinks">11</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink12" class="numLinks">12</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink13" class="numLinks">13</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink14" class="numLinks">14</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+				<!-- Number Link -->
+			<a href="#imgLink15" class="numLinks">15</a> <br />
+				<!-- Line -->
+				<div class="numLinksLine"></div>
+
+		</div>
+
+		<div class="g-img" onclick="G_showImg1()">
+		<img src="images/gallery/img11.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Спалня "Stylish wood"
+			</div>
+
+		</div>
+
+		<div class="g-img2" onclick="G_showImg2()">
+		<img src="images/gallery/img12.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Всекидневна "Creamy"
+			</div>
+		</div>
+
+		<div class="g-img3" onclick="G_showImg3()">
+		<img src="images/gallery/img13.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Всекидневна "Light Fireplace"
+			</div>
+		</div>
+
+		<div class="g-img4" onclick="G_showImg4()">
+		<img src="images/gallery/img14.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Спалня "My Comfort"
+			</div>
+		</div>
+
+		<div class="g-img5" onclick="G_showImg5()">
+		<img src="images/gallery/img15.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Всекидневна "Steel with Style"
+			</div>
+		</div>
+
+		<div class="g-img6" onclick="G_showImg6()">
+		<img src="images/gallery/img16.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Спалня "Royal Dreams"
+			</div>
+		</div>
+
+		<div class="g-img7" onclick="G_showImg7()">
+		<img src="images/gallery/img17.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Спалня "Zebra"
+			</div>
+		</div>
+
+		<div class="g-img8" onclick="G_showImg8()">
+		<img src="images/gallery/img18.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Всекидневна "Celtic Faith"
+			</div>
+		</div>
+
+		<div class="g-img9" onclick="G_showImg9()">
+		<img src="images/gallery/img1.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Комплект "Violette"
+			</div>
+		</div>
+
+		<div class="g-img10" onclick="G_showImg10()">
+		<img src="images/gallery/img2.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Спалня "Rose Quartz"
+			</div>
+		</div>
+
+		<div class="g-img11" onclick="G_showImg11()">
+		<img src="images/gallery/img3.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Всекидневна "Inside of a Coconut"
+			</div>
+		</div>
+
+		<div class="g-img12" onclick="G_showImg12()">
+		<img src="images/gallery/img4.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Всекидневна "Veltheimia"
+			</div>
+		</div>
+
+		<div class="g-img13" onclick="G_showImg13()">
+		<img src="images/gallery/img5.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Спалня "Anthurium"
+			</div>
+		</div>
+
+		<div class="g-img14" onclick="G_showImg14()">
+		<img src="images/gallery/img6.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Спалня "Echeveria"
+			</div>
+		</div>
+
+		<div class="g-img15" onclick="G_showImg15()">
+		<img src="images/gallery/img7.jpg" class="g-imgSize">
+			<div class="g-img-description">
+				Всекидневна "Forest Realm"
+			</div>
+		</div>
+
+		<div id="imgLink1"></div>
+		<div id="imgLink2"></div>
+		<div id="imgLink3"></div>
+		<div id="imgLink4"></div>
+		<div id="imgLink5"></div>
+		<div id="imgLink6"></div>
+		<div id="imgLink7"></div>
+		<div id="imgLink8"></div>
+		<div id="imgLink9"></div>
+		<div id="imgLink10"></div>
+		<div id="imgLink11"></div>
+		<div id="imgLink12"></div>
+		<div id="imgLink13"></div>
+		<div id="imgLink14"></div>
+		<div id="imgLink15"></div>
+
+		<img src="images/png/6.png" id="g-png">
+
+
+		<!-- IMG ZOOM - 1 -->
+	<div id="g-z">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img11.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg1()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Спалня "Stylish Wood"
+			</div>
+			<div class="g-img1-txtFont">
+				Секция състояща се от рафт, място за плазмен телевизор и 2 широки шкафчета. <br /> 
+				2 комфортни стола и овална стъклена маса. <br />
+				Спалня: 148 х 194,4 х 24,5 <br />
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- IMG ZOOM - 2 -->
+	<div id="g-z2">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img12.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg2()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Всекидневна "Creamy"
+			</div>
+			<div class="g-img1-txtFont">
+				2 3-местни дивана <br />
+				Правоъгълна дървена маса <br />
+				Килим <br />
+				Библиотечка с 5 рафта <br />
+				2 високи лампи <br />
+				Квадратна висока таборетка
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 3 -->
+	<div id="g-z3">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img13.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg3()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Всекидневна "Light Fireplace"
+			</div>
+			<div class="g-img1-txtFont">
+				Камина <br />
+				Стол <br />
+				Диван и таборетка <br />
+				Мини-библиотечка <br />
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 4 -->
+	<div id="g-z4">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img14.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg4()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Спалня "My Comfort"
+			</div>
+			<div class="g-img1-txtFont">
+				Спалня: 148 х 194,4 х 24,5 <br />
+				2 средно-високи лампиона <br />
+				Маса на колелца с 2 шкавчета и стъклена повърхност. Издръжлива и удобна за средно-голям телевизор.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 5 -->
+	<div id="g-z5">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img15.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg5()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Всекидневна "Steel with Style"
+			</div>
+			<div class="g-img1-txtFont">
+				Триместен диван, фотьойл, малка кръгла масичка, поставка за телевизор, 4 пластмасови стола и уникална стъклена маса.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 6 -->
+	<div id="g-z6">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img16.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg6()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Спалня "Royal Dreams"
+			</div>
+			<div class="g-img1-txtFont">
+				Спалня: 148 х 194,4 х 24,5
+				Таборетка, креватче за четене, удобно люлеещо се диванче за двама, лампион и скрин.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 7 -->
+	<div id="g-z7">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img17.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg7()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Спалня "Zebra"
+			</div>
+			<div class="g-img1-txtFont">
+				Спалня: 148 х 194,4 х 24,5
+				с уникален дизайн, създаваща комфорт. <br />
+				Секция с високи шкафчета и място за компютър.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 8 -->
+	<div id="g-z8">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img18.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg8()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Всекидневна "Celtic Faith"
+			</div>
+			<div class="g-img1-txtFont">
+				3 уникални и прекрасни картини за вашата всекидневна, 2 удобни високи фотьойла, двуместен диван и таборетка, ниска средно-голяма маса.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 9 -->
+	<div id="g-z9">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img1.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg9()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Комплект "Violette"
+			</div>
+			<div class="g-img1-txtFont">
+				2 стола с уникален дизайн, мини диван, пухен килим 190 х 150.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 10 -->
+	<div id="g-z10">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img2.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg10()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Спалня "Rose Quartz"
+			</div>
+			<div class="g-img1-txtFont">
+				Повдигаща се спалня 148 х 194,4 х 24,5 см. с прекрасен дизайн и удобен матрак. <br />
+				Дървена масичка на 4 крака, стол и диван в тон с леглото.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 11 -->
+	<div id="g-z11">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img3.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg11()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Всекидневна "Inside of a Coconut"
+			</div>
+			<div class="g-img1-txtFont">
+				2 маси - маса за гости и маса за хранене. Комплект от 6 стола за хранене. Триместен диван и фотьойл. Висящ лампион с овален дизайн.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 12 -->
+	<div id="g-z12">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img4.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg12()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Всекидневна "Veltheimia"
+			</div>
+			<div class="g-img1-txtFont">
+				Четириместен ъглов диван, стенна поставка за телевизор, рафтчета удобни за всяка стена и фотьойл за четене с комплект стилни възглавнички.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 13 -->
+	<div id="g-z13">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img5.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg13()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Спалня "Anthurium"
+			</div>
+			<div class="g-img1-txtFont">
+				2 стенни рафта,<br /> удобно двойно легло 148 х 194,4 х 24,5 <br />
+				Малка и стилна секция със скрити вратички.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 14 -->
+	<div id="g-z14">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img6.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg14()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Спалня "Echeveria"
+			</div>
+			<div class="g-img1-txtFont">
+				5-крилен дървен гардероб с огледало на средното крило. Рафтове в две от крилата и пригодени за закачалки две крила. Удобно дървено легло и дървено нощно шкафче с лампион.
+			</div>
+		</div>
+	</div>
+	<!-- IMG ZOOM - 15 -->
+	<div id="g-z15">
+		<div class="g-img1-ZoomImg">
+			<img src="images/gallery/img7.jpg" class="zoom-img-resize">
+		</div>
+		<div class="g-img1-ZoomTxt">
+		<div class="x-mark" onclick="G_hideImg15()">
+			<img class="x-img" src="images/png/x-mark.png">
+		</div>
+			<div class="g-img1-header">
+				Всекидневна "Forest Realm"
+			</div>
+			<div class="g-img1-txtFont">
+				Два удобни дивана, зелени вертикални щори, малка ниска масичка, поставка за телевизор с две шкафчета и пухен средно-голям килим.
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

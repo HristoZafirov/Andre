@@ -1,0 +1,159 @@
+.parallax {
+	height: 100vh;
+	perspective: 300px;
+		-webkit-perspective: 300px;
+		-moz-perspective: 300px;
+		-o-perspective: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.parallax__group1 {
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+	overflow: hidden;
+}
+.parallax__group2 {
+	position: relative;
+	height: 70vh;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+}
+.parallax__group3 {
+	position: relative;
+	height: 40vh;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+}
+.parallax__group4 {
+	position: relative;
+	height: 110vh;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+}
+.parallax__group5 {
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+}
+.parallax__group6 {
+	position: relative;
+	height: 60vh;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+}
+.parallax__group7 {
+	top: -195vh;
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.parallax__layer--fore {
+	transform: translateZ(90px) scale(.7);
+		-webkit-transform: translateZ(90px) scale(.7);
+		-moz-transform: translateZ(90px) scale(.7);
+		-o-transform: translateZ(90px) scale(.7);
+	z-index: 1;
+}
+.parallax__layer--base {
+	transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		z-index: 4;
+}
+.parallax__layer--base5 {
+	transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		z-index: 4;
+}
+.parallax__layer--back {
+	transform: translateZ(-300px) scale(2.02);
+		-webkit-transform: translateZ(-300px) scale(2.02);
+		-moz-transform: translateZ(-300px) scale(2.02);
+		-o-transform: translateZ(-300px) scale(2.02);
+		z-index: 3;
+}
+.parallax__layer--deep {
+	transform: translateZ(-600px) scale(3);
+		-webkit-transform: translateZ(-600px) scale(3);
+		-moz-transform: translateZ(-600px) scale(3);
+		-o-transform: translateZ(-600px) scale(3);
+		z-index: 2;
+}
+#group1 {
+	z-index: 5;
+}
+#group1 .parallax__layer--base {
+	background-image: url("parallax/img11.jpg");
+	background-size: 100%;
+}
+#group2 {
+	z-index: 2;
+}
+#group2 .parallax__layer--base {
+	background-image: url("parallax/img14.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+}
+#group3 {
+	z-index: 4;
+}
+#group3 .parallax__layer--base {
+	background-image: url("textures/texture.jpg");
+	background-position: center;
+}
+#group4 {
+	z-index: 1;
+}
+#group4 .parallax__layer--base {
+	background-image: url("layers/3 layer3.png");
+	background-size: 100%;
+}
+#group5 {
+	z-index: 3;
+}
+#group5 .parallax__layer--base {
+	background-image: url('parallax/img11.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+}
+#group6 {
+	z-index: 0;
+}
+#group6 .parallax__layer--base {
+	background-color: rgb(40,15,0);
+	background-size: 100%;
+}
+#group7 {
+	z-index: 3;
+}
+#group7 .parallax__layer--base {
+	background-color: skyblue;
+}

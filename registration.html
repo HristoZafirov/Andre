@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<!-- INCLUDES -->
+	<!-- CSS -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/logo1.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax_register.css">
+	<!-- JavaScript and jQuery -->
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/parallax_scroll.js"></script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.js"></script>
+	<!-- Metas -->
+	<meta charset="utf-8">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="parallax">
+	<div id="group1" class="parallax__group1">
+		<div class="parallax__layer parallax__layer--base">
+			<div id="infoBG">
+			<a href="registrationBG.html">
+				<img src="images/flags/bgFlag.png" height="15" width="25">
+			</a>
+			</div>
+			<div id="infoEN">
+				<a href="registration.html">
+					<img src="images/flags/enFlag.gif" height="15" width="25">
+				</a>
+			</div>
+			<img src="images/png/14.png" id="registerPng">
+			<div id="registrationLetter">
+				<div id="welcRegister">
+					Register
+				</div>
+				<form action="" method="post" class="form">
+
+<!-- ================= TABLE 1 ======================= -->
+					<table id="tableRegister">
+						<tr>
+							<td> First name: </td>
+							<td> <input type="text" name="Fname" value="" placeholder="Insert your first name"> </td>
+						</tr>
+						<tr>
+							<td> Last name: </td>
+							<td> <input type="text" name="Lname" value="" placeholder="Insert your last name"> </td>
+						</tr>
+						<tr>
+							<td> Password: </td>
+							<td> <input type="password" name="password" value="" placeholder="Insert your password"> </td>
+						</tr>
+						<tr>
+							<td> Password repeat: </td>
+							<td> <input type="password" name="password" value="" placeholder="Repeat your password"> </td>
+						</tr>
+						<tr>
+							<td> E-mail: </td>
+							<td> <input type="text" name="email" value="" 
+							placeholder="Insert your E-mail"> </td>
+						</tr>
+					</table>
+
+<!-- ============== TABLE 2 ========================== -->
+					<table id="tableRegister2">
+						<tr>
+							<td> City: </td>
+							<td> <input type="text" name="city" value="" placeholder="Insert your city"> </td>
+						</tr>
+						<tr>
+							<td> Address: </td>
+							<td> <input type="text" name="Lname" value="" placeholder="Insert your address"> </td>
+						</tr>
+						<tr>
+							<td> Country: </td>
+							<td> <input type="text" name="country" value="" placeholder="Insert your country"> </td>
+						</tr>
+						<tr>
+							<td> Secret question: </td>
+							<td> <input type="text" name="secretQ" value="" placeholder="Insert a question"> </td>
+						</tr>
+						<tr>
+							<td> Secret answer: </td>
+							<td> <input type="text" name="secretA" value="" 
+							placeholder="Insert your answer"> </td>
+						</tr>
+						<tr>
+							<td colspan="2"> <input id="submitReg" type="submit" name="submit" value="Submit"> </td>
+						</tr>
+					</table>
+
+<!-- =================== BUTTON FORWARD ================== -->
+					<table id="buttonTable">
+						<tr>
+							<td colspan="2" align="center"> <input type="button" id="registerForward" name="forward" value="Forward" onmouseover="forwardButtonReg()"
+							onmouseout="forwardButtonRegBack()"
+							onclick="forwardButtonAnimation()"> </td>
+						</tr>
+					</table>
+<!-- ================== BUTTON BACKWARD ================== -->
+					<table id="buttonTable2">
+						<tr>
+							<td colspan="2" align="center"> <input type="button" id="registerBackward" name="forward" value="Backward" onmouseover="forwardButtonReg()"
+							onmouseout="forwardButtonRegBack()"
+							onclick="backwardButtonAnimation()"> </td>
+						</tr>
+					</table>
+				</form>
+
+			</div>
+			<div id="registerNavbar">
+				<a href="index.html"> Home </a>		<br />
+				<div class="regNavbarLines"></div>
+				<a href="info.html"> Information </a>		<br />
+				<div class="regNavbarLines"></div>
+				<a href="order.html"> Order </a>		<br />
+				<div class="regNavbarLines"></div>
+				<a href="gallery.html"> Gallery </a>		<br />
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

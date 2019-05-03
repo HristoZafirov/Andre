@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title id="title">Order</title>
+
+	<!-- INCLUDES -->
+	<!-- CSS -->
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/logo1.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax2.css">
+	<!-- JavaScript and jQuery -->
+
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/parallax_scroll.js"></script>
+	<script type="text/javascript" src="jquery/jquery-1.12.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="jquery/jquery-2.2.3.js"></script>
+	<!-- Metas -->
+
+	<meta charset="utf-8">
+	<!-- Fonts -->
+
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+	
+</head>
+
+<body onload="monitorSlide(); descriptionSlide();">
+
+<div id="order-background"> <!-- main div -->
+
+<div id="greyOrder">
+	<div id="O-button" onclick="orderHideInfo()">
+		<img src="images/png/threelines.png" height="20" width="20">
+	</div>
+	<div id="O-button2" onclick="orderShowInfo()">
+		<img src="images/png/threelines.png" height="20" width="20">
+	</div>
+	<p id="O-show-hide" onclick="orderShowInfo()">Hide</p>
+	<!-- CHANGE LANGUAGE -->
+				<div id="o-infoBG">
+					<a href="orderBG.html">
+						<img src="images/flags/bgFlag.png" height="15" width="25">
+					</a>
+				</div>
+				<div id="o-infoEN">
+					<a href="order.html">
+						<img src="images/flags/enFlag.gif" height="15" width="25">
+					</a>
+				</div>
+	<div id="O-links">
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="HH()" 
+			onmouseout="Hhh()" 
+			href="index.html"
+			id="hm">
+				&spades; Home
+			</a><br />
+		</div>
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="RR()"
+			onmouseout="Rhh()" 
+			href="registration.html"
+			id="hr">
+				&clubs; Registration
+			</a><br />
+		</div>
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="GG()" 
+			onmouseout="Ghh()" 
+			href="gallery.html">
+				&hearts; Gallery
+			</a><br />
+		</div>
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="II()" 
+			onmouseout="Ihh()" 
+			href="info.html">
+				&diams; Information
+			</a><br />
+		</div>
+
+
+		<div id="O-link-home">
+			<img class="o-link-img-size" src="images/icons/homepage.png">
+			<br />
+			<p class="o-link-txt-margin">
+				This is our home page with latest news!
+			</p>
+		</div>
+
+		<div id="O-link-reg">
+			<img class="o-link-img-size" src="images/icons/account.png">
+			<br />
+			<p class="o-link-txt-margin">
+				You can register an account from here!
+			</p>
+		</div>
+
+		<div id="O-link-gallery">
+			<img class="o-link-img-size" src="images/icons/gallery.png">
+			<br />
+			<p class="o-link-txt-margin">
+				All of our products available for purchase are here!
+			</p>
+		</div>
+
+		<div id="O-link-info">
+			<img class="o-link-img-size" src="images/icons/information.png">
+			<br />
+			<p class="o-link-txt-margin">
+				You can find all the information you need about us here!
+			</p>
+		</div>
+	</div>
+</div>
+
+<div id="O-monitor">
+	<img class="O-monitor-img" src="images/monitors/monitor.png">
+	<img id="inside-monitor-img" src="images/gallery/img11.jpg">
+</div>
+<div id="O-description">
+	<p id="desc-Header">Bed room "Stylish Wood"</p>
+	<p id="desc-Price">Price: 479$</p>
+</div>
+	
+
+<img id="O-divider" src="images/dividers/divider.png">
+
+<div id="orderBox">
+	<div class="O-margin-table">
+	<form>
+
+		<table>
+
+			<tr>
+				<td id="name-order"> Name: </td>
+				<td> <input type="text" value="" placeholder="Insert your name"></td>
+			</tr>
+
+			<tr>
+				<td id="lname-order"> Last name: </td>
+				<td> <input type="text" value="" placeholder="Insert your last name"></td>
+			</tr>
+
+			<tr>
+				<td id="email-order"> E-mail: </td>
+				<td> <input type="text" value="" placeholder="Insert your E-mail">
+			</tr>
+
+			
+
+			<tr>
+				<td id="address-order"> Address: </td>
+				<td> <input type="text" value="" placeholder="Insert your address"></td>
+			</tr>
+
+			<tr>
+				<td id="city-order"> City: </td>
+				<td> <input type="text" value="" placeholder="Insert your city"></td>
+			</tr>
+			<tr>
+				<td id="product-order"> Product: </td>
+				<td>
+					<select id="">
+						<option value="" selected
+						onclick="stylish_wood()">
+								Stylish Wood 
+								</option>
+						<option value=""
+						onclick="creamy()">
+								Creamy 
+								</option>
+						<option value=""
+						onclick="light_fireplace()">
+							 Light Fireplace 
+							 </option>
+						<option value=""
+						onclick="my_comfort()">
+							 My Comfort 
+							 </option>
+						<option value=""
+						onclick="steel_with_style()">
+							 Steel with Style 
+							 </option>
+						<option value=""
+						onclick="royal_dreams()">
+							 Royal Dreams 
+							 </option>
+						<option value=""
+						onclick="zebra()">
+							 Zebra 
+							 </option>
+						<option value=""
+						onclick="celtic_faith()">
+							 Celtic Faith 
+							 </option>
+						<option value=""
+						onclick="violette()">
+							 Violette 
+							 </option>
+						<option value=""
+						onclick="rose_quartz()">
+							 Rose Quartz 
+							 </option>
+						<option value=""
+						onclick="inside_coconut()">
+							 Inside of a Coconut 
+							 </option>
+						<option value=""
+						onclick="veltheimia()">
+							 Veltheimia 
+							 </option>
+						<option value=""
+						onclick="anthurium()">
+							 Anthurium 
+							 </option>
+						<option value=""
+						onclick="echeveria()">
+							 Echeveria 
+							 </option>
+						<option value=""
+						onclick="forest_realm()">
+							 Forest Realm 
+							 </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"> <input type="submit" value="Submit">
+				<input type="reset" value="Reset"></td>
+			</tr>
+
+		</table>
+
+	</form>
+	</div>
+</div>
+
+
+
+</div> <!-- main div -->
+
+</body>
+</html>

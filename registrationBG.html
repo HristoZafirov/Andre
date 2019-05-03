@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Регистрация</title>
+	<!-- INCLUDES -->
+	<!-- CSS -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/logo1.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax_register.css">
+	<!-- JavaScript and jQuery -->
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/parallax_scroll.js"></script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.js"></script>
+	<!-- Metas -->
+	<meta charset="utf-8">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+</head>
+<body>
+			<div id="infoBG">
+				<a href="registrationBG.html">
+					<img src="images/flags/bgFlag.png" height="15" width="25">
+				</a>
+			</div>
+			<div id="infoEN">
+				<a href="registration.html">
+					<img src="images/flags/enFlag.gif" height="15" width="25">
+				</a>
+			</div>
+<div class="parallax">
+	<div id="group1" class="parallax__group1">
+		<div class="parallax__layer parallax__layer--base">
+			
+			<img src="images/png/14.png" id="registerPng">
+			<div id="registrationLetter">
+				<div id="welcRegisterBG">
+					Регистрация
+				</div>
+				<form action="" method="post" class="form">
+
+<!-- ================= TABLE 1 ======================= -->
+					<table id="tableRegisterBG">
+						<tr>
+							<td> Име: </td>
+							<td> <input type="text" name="Fname" value="" placeholder="Въведи име"> </td>
+						</tr>
+						<tr>
+							<td> Фамилия: </td>
+							<td> <input type="text" name="Lname" value="" placeholder="Въведи фамилия"> </td>
+						</tr>
+						<tr>
+							<td> Парола: </td>
+							<td> <input type="password" name="password" value="" placeholder="Въведи парола"> </td>
+						</tr>
+						<tr>
+							<td> Повтори парола: </td>
+							<td> <input type="password" name="password" value="" placeholder="Повтори паролата си"> </td>
+						</tr>
+						<tr>
+							<td> Е-мейл: </td>
+							<td> <input type="text" name="email" value="" 
+							placeholder="Въведи е-мейл"> </td>
+						</tr>
+					</table>
+
+<!-- ============== TABLE 2 ========================== -->
+					<table id="tableRegister2BG">
+						<tr>
+							<td> Град: </td>
+							<td> <input type="text" name="city" value="" placeholder="Въведи град"> </td>
+						</tr>
+						<tr>
+							<td> Адрес: </td>
+							<td> <input type="text" name="Lname" value="" placeholder="Въведи адрес"> </td>
+						</tr>
+						<tr>
+							<td> Държава: </td>
+							<td> <input type="text" name="country" value="" placeholder="Въведи държава"> </td>
+						</tr>
+						<tr>
+							<td> Таен въпрос: </td>
+							<td> <input type="text" name="secretQ" value="" placeholder="Въведи въпрос"> </td>
+						</tr>
+						<tr>
+							<td> Таен отговор: </td>
+							<td> <input type="text" name="secretA" value="" 
+							placeholder="Въведи своя отговор"> </td>
+						</tr>
+						<tr>
+							<td colspan="2"> <input id="submitReg" type="submit" name="submit" value="Изпрати"> </td>
+						</tr>
+					</table>
+
+<!-- =================== BUTTON FORWARD ================== -->
+					<table id="buttonTableBG">
+						<tr>
+							<td colspan="2" align="center"> <input type="button" id="registerForwardBG" name="forward" value="Напред" onmouseover="forwardButtonRegBG()"
+							onmouseout="forwardButtonRegBackBG()"
+							onclick="forwardButtonAnimationBG()"> </td>
+						</tr>
+					</table>
+<!-- ================== BUTTON BACKWARD ================== -->
+					<table id="buttonTable2BG">
+						<tr>
+							<td colspan="2" align="center"> <input type="button" id="registerBackwardBG" name="forward" value="Назад" onmouseover="forwardButtonRegBG()"
+							onmouseout="forwardButtonRegBackBG()"
+							onclick="backwardButtonAnimationBG()"> </td>
+						</tr>
+					</table>
+				</form>
+
+			</div>
+			<div id="registerNavbar">
+				<a href="indexBG.html"> Начало </a>		<br />
+				<div class="regNavbarLines"></div>
+				<a href="infoBG.html"> Информация </a>		<br />
+				<div class="regNavbarLines"></div>
+				<a href="orderBG.html"> Поръчка </a>		<br />
+				<div class="regNavbarLines"></div>
+				<a href="galleryBG.html"> Галерия </a>		<br />
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

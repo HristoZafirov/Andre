@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Поръчка</title>
+
+	<!-- INCLUDES -->
+	<!-- CSS -->
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/logo1.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax2.css">
+	<!-- JavaScript and jQuery -->
+
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/parallax_scroll.js"></script>
+	<script type="text/javascript" src="jquery/jquery-1.12.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="jquery/jquery-2.2.3.js"></script>
+	<!-- Metas -->
+
+	<meta charset="utf-8">
+	<!-- Fonts -->
+
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+	
+</head>
+
+<body onload="monitorSlide()">
+
+<div id="order-background"> <!-- main div -->
+
+<div id="greyOrder">
+	<div id="O-button" onclick="orderHideInfoBG()">
+		<img src="images/png/threelines.png" height="20" width="20">
+	</div>
+	<div id="O-button2" onclick="orderShowInfoBG()">
+		<img src="images/png/threelines.png" height="20" width="20">
+	</div>
+	<p id="O-show-hide" onclick="orderShowInfoBG()">Скрий</p>
+	<!-- CHANGE LANGUAGE -->
+				<div id="o-infoBG">
+					<a href="orderBG.html">
+						<img src="images/flags/bgFlag.png" height="15" width="25">
+					</a>
+				</div>
+				<div id="o-infoEN">
+					<a href="order.html">
+						<img src="images/flags/enFlag.gif" height="15" width="25">
+					</a>
+				</div>
+	<div id="O-linksBG">
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="HH()" 
+			onmouseout="Hhh()" 
+			href="indexBG.html">
+				&spades; Начало
+			</a><br />
+		</div>
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="RR()"
+			onmouseout="Rhh()" 
+			href="registrationBG.html">
+				&clubs; Регистрация
+			</a><br />
+		</div>
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="GG()" 
+			onmouseout="Ghh()" 
+			href="galleryBG.html">
+				&hearts; Галерия
+			</a><br />
+		</div>
+		<div style="margin-bottom: 4%;">
+			<a 
+			onmouseover="II()" 
+			onmouseout="Ihh()" 
+			href="infoBG.html">
+				&diams; Информация
+			</a><br />
+		</div>
+
+
+		<div id="O-link-home">
+			<img class="o-link-img-size" src="images/icons/homepage.png">
+			<br />
+			<p class="o-link-txt-margin">
+				Това е нашата начална страница с последните новини!
+			</p>
+		</div>
+
+		<div id="O-link-reg">
+			<img class="o-link-img-size" src="images/icons/account.png">
+			<br />
+			<p class="o-link-txt-margin">
+				От тук можете да се регистрирате!
+			</p>
+		</div>
+
+		<div id="O-link-gallery">
+			<img class="o-link-img-size" src="images/icons/gallery.png">
+			<br />
+			<p class="o-link-txt-margin">
+				Всички наши продукти, които могат да бъдат закупени ще намерите тук!
+			</p>
+		</div>
+
+		<div id="O-link-info">
+			<img class="o-link-img-size" src="images/icons/information.png">
+			<br />
+			<p class="o-link-txt-margin">
+				Тук ще намерите всичката информация за нас, която Ви е нужна!
+			</p>
+		</div>
+	</div>
+</div>
+
+<div id="O-monitor">
+	<img class="O-monitor-img" src="images/monitors/monitor.png">
+	<img id="inside-monitor-img" src="images/gallery/img11.jpg">
+</div>
+<div id="O-description">
+	<p id="desc-Header">Спалня "Stylish Wood"</p>
+	<p id="desc-Price">Цена: 479 лв.</p>
+</div>
+	
+
+<img id="O-divider" src="images/dividers/divider.png">
+
+<div id="orderBox">
+	<div class="O-margin-table">
+	<form>
+
+		<table>
+
+			<tr>
+				<td> Име: </td>
+				<td> <input type="text" value="" placeholder="Въведете вашето име"></td>
+			</tr>
+
+			<tr>
+				<td> Фамилия: </td>
+				<td> <input type="text" value="" placeholder="Въведете вашата фамилия"></td>
+			</tr>
+
+			<tr>
+				<td> Е-мейл: </td>
+				<td> <input type="text" value="" placeholder="Въведете Е-мейл">
+			</tr>
+
+			
+
+			<tr>
+				<td> Адрес: </td>
+				<td> <input type="text" value="" placeholder="Въвъдете адрес"></td>
+			</tr>
+
+			<tr>
+				<td> Град: </td>
+				<td> <input type="text" value="" placeholder="Въведете град"></td>
+			</tr>
+			<tr>
+				<td> Продукт: </td>
+				<td>
+					<select id="">
+						<option value="" selected
+						onclick="stylish_woodBG()">
+								Stylish Wood 
+								</option>
+						<option value=""
+						onclick="creamyBG()">
+								Creamy 
+								</option>
+						<option value=""
+						onclick="light_fireplaceBG()">
+							 Light Fireplace 
+							 </option>
+						<option value=""
+						onclick="my_comfortBG()">
+							 My Comfort 
+							 </option>
+						<option value=""
+						onclick="steel_with_styleBG()">
+							 Steel with Style 
+							 </option>
+						<option value=""
+						onclick="royal_dreamsBG()">
+							 Royal Dreams 
+							 </option>
+						<option value=""
+						onclick="zebra()BG">
+							 Zebra 
+							 </option>
+						<option value=""
+						onclick="celtic_faithBG()">
+							 Celtic Faith 
+							 </option>
+						<option value=""
+						onclick="violetteBG()">
+							 Violette 
+							 </option>
+						<option value=""
+						onclick="rose_quartzBG()">
+							 Rose Quartz 
+							 </option>
+						<option value=""
+						onclick="inside_coconutBG()">
+							 Inside of a Coconut 
+							 </option>
+						<option value=""
+						onclick="veltheimiaBG()">
+							 Veltheimia 
+							 </option>
+						<option value=""
+						onclick="anthuriumBG()">
+							 Anthurium 
+							 </option>
+						<option value=""
+						onclick="echeveriaBG()">
+							 Echeveria 
+							 </option>
+						<option value=""
+						onclick="forest_realmBG()">
+							 Forest Realm 
+							 </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"> <input type="submit" value="Поръчай">
+				<input type="reset" value="Изчисти"></td>
+			</tr>
+
+		</table>
+
+	</form>
+	</div>
+</div>
+
+
+
+</div> <!-- main div -->
+
+</body>
+</html>
